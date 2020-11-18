@@ -1,0 +1,156 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+
+}
+
+body{
+  width:100%;
+  min-height: 100vh;
+  background-color:#FAFAFA;
+  margin:0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+}
+
+.isntagram-wrapper{
+  display:flex;
+  align-items: center;
+  justify-content:start;
+  width: 60%;
+  height: 100vh;
+}
+
+.isntagram-phone{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height:50rem;
+}
+
+.instagram-continue{
+  display:flex;
+  align-items: center;               /* agora está na Horizontal*/
+  justify-content: space-around;    /* agora está na vertical*/
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+  
+  
+}
+
+.group{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 5px;
+  padding:1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.group:nth-child(1){
+  min-height: 19rem ;
+
+}
+
+.instagram-logo{
+  height: 3rem;
+}
+
+.profile-photo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:15px;
+  border-radius:50%;
+  overflow: hidden;
+}
+
+.profile-photo img{
+  height: 6rem;
+  width: 100px;
+  height: 100px;
+}
+
+.instagram-login{
+  background-color: #0095f6;
+  color:#ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout{
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-account{
+  color:rgb(160,160,160);
+}
+ 
+.link-blue{
+  color: #0095f6;
+}
+
+.get-the-app{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding:1rem;
+}
+
+.app-download {
+  height: 5rem;
+  width: 13rem;
+  background-size: cover;
+}
+
+.app-download:nth-child(1){
+  background-image: url('./img/apple-button.png');
+}
+
+.app-download:nth-child(2){
+  background-image: url('./img/google-button.png');
+}
+
+/* media queries*/
+
+@media (max-width: 1024px) {
+  .instagram-wrapper{
+    width:90%;
+  }
+}
+
+@media (max-width:650px){
+  .isntagram-wrapper{
+    width:90%;
+  }
+  .instagram-phone {
+    display:none;
+  }
+  .isntagram-continue{
+    width:50%;
+  }
+}
